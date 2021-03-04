@@ -1,0 +1,17 @@
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\bin\Debug\LibFormularios.dll
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\bin\Debug\LibFormularios.pdb
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\bin\Debug\LibClases.dll
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\bin\Debug\LibClases.pdb
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.csprojAssemblyReference.cache
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.frmAlerta1.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.frmAsistencia.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.frmAuxiliar.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.frmControlUsuario.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.frmDirector.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.frmIngresoDatos.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.Properties.Resources.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.csproj.GenerateResource.cache
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.csproj.CoreCompileInputs.cache
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.csproj.CopyComplete
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.dll
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibFormularios\obj\Debug\LibFormularios.pdb

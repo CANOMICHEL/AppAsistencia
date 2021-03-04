@@ -1,0 +1,15 @@
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\AppControlAsistencia.exe.config
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\AppControlAsistencia.exe
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\AppControlAsistencia.pdb
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\LibFormularios.dll
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\LibClases.dll
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\LibFormularios.pdb
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\bin\Debug\LibClases.pdb
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.csprojAssemblyReference.cache
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.FrmPrincipal.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.Properties.Resources.resources
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.csproj.GenerateResource.cache
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.csproj.CoreCompileInputs.cache
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.csproj.CopyComplete
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.exe
+D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\AppControlAsistencia\obj\Debug\AppControlAsistencia.pdb
