@@ -1,6 +1,0 @@
-D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibClases\bin\Debug\LibClases.dll
-D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibClases\bin\Debug\LibClases.pdb
-D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibClases\obj\Debug\LibClases.csproj.CoreCompileInputs.cache
-D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibClases\obj\Debug\LibClases.dll
-D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibClases\obj\Debug\LibClases.pdb
-D:\SISTEMA_ASISTENCIA_VF\AppControlAsistencia\LibClases\obj\Debug\LibClases.csprojAssemblyReference.cache
