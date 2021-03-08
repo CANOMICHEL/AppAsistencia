@@ -99,5 +99,7 @@ namespace LibClases
             aConexion.EjecutarSelect(consulta);
             return aConexion.Datos.Tables[0];
         }
+
+
     }
 }

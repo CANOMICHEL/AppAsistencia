@@ -59,19 +59,6 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnReporte = new System.Windows.Forms.Button();
-            this.cboMes = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cboSeccionR = new System.Windows.Forms.ComboBox();
-            this.cboGradoR = new System.Windows.Forms.ComboBox();
-            this.tbNombreDocente = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dgvReporte = new System.Windows.Forms.DataGridView();
             this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOMBRES = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,6 +93,19 @@
             this.Column29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnReporte = new System.Windows.Forms.Button();
+            this.cboMes = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboSeccionR = new System.Windows.Forms.ComboBox();
+            this.cboGradoR = new System.Windows.Forms.ComboBox();
+            this.tbNombreDocente = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.tabControl_Docente.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -116,8 +116,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -417,137 +417,6 @@
             this.panel6.Size = new System.Drawing.Size(1312, 402);
             this.panel6.TabIndex = 1;
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnReporte);
-            this.panel5.Controls.Add(this.cboMes);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.cboSeccionR);
-            this.panel5.Controls.Add(this.cboGradoR);
-            this.panel5.Controls.Add(this.tbNombreDocente);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(3, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1312, 95);
-            this.panel5.TabIndex = 0;
-            // 
-            // btnReporte
-            // 
-            this.btnReporte.Location = new System.Drawing.Point(919, 45);
-            this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(215, 29);
-            this.btnReporte.TabIndex = 12;
-            this.btnReporte.Text = "BUSCAR";
-            this.btnReporte.UseVisualStyleBackColor = true;
-            this.btnReporte.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cboMes
-            // 
-            this.cboMes.FormattingEnabled = true;
-            this.cboMes.Items.AddRange(new object[] {
-            "ENERO",
-            "FEBRERO",
-            "MARZO",
-            "ABRIL",
-            "MAYO",
-            "JUNIO",
-            "JULIO",
-            "AGOSTO",
-            "SETIEMBRE",
-            "OCTUBRE",
-            "NOVIEMBRE",
-            "DICIEMBRE"});
-            this.cboMes.Location = new System.Drawing.Point(592, 48);
-            this.cboMes.Name = "cboMes";
-            this.cboMes.Size = new System.Drawing.Size(304, 28);
-            this.cboMes.TabIndex = 11;
-            this.cboMes.Text = "ENERO";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(538, 51);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "MES:";
-            // 
-            // cboSeccionR
-            // 
-            this.cboSeccionR.FormattingEnabled = true;
-            this.cboSeccionR.Location = new System.Drawing.Point(398, 48);
-            this.cboSeccionR.Name = "cboSeccionR";
-            this.cboSeccionR.Size = new System.Drawing.Size(115, 28);
-            this.cboSeccionR.TabIndex = 5;
-            // 
-            // cboGradoR
-            // 
-            this.cboGradoR.FormattingEnabled = true;
-            this.cboGradoR.Location = new System.Drawing.Point(84, 49);
-            this.cboGradoR.Name = "cboGradoR";
-            this.cboGradoR.Size = new System.Drawing.Size(201, 28);
-            this.cboGradoR.TabIndex = 4;
-            // 
-            // tbNombreDocente
-            // 
-            this.tbNombreDocente.Location = new System.Drawing.Point(212, 7);
-            this.tbNombreDocente.Name = "tbNombreDocente";
-            this.tbNombreDocente.Size = new System.Drawing.Size(922, 26);
-            this.tbNombreDocente.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(307, 56);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 20);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "SECCIÓN:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "GRADO:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "NOMBRE DEL DOCENTE:";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1318, 503);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Incidencias";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 29);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1318, 503);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Justificaciones";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // dgvReporte
             // 
             this.dgvReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -789,6 +658,137 @@
             this.Column31.Name = "Column31";
             this.Column31.Width = 25;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnReporte);
+            this.panel5.Controls.Add(this.cboMes);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.cboSeccionR);
+            this.panel5.Controls.Add(this.cboGradoR);
+            this.panel5.Controls.Add(this.tbNombreDocente);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1312, 95);
+            this.panel5.TabIndex = 0;
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.Location = new System.Drawing.Point(919, 45);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(215, 29);
+            this.btnReporte.TabIndex = 12;
+            this.btnReporte.Text = "BUSCAR";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cboMes
+            // 
+            this.cboMes.FormattingEnabled = true;
+            this.cboMes.Items.AddRange(new object[] {
+            "ENERO",
+            "FEBRERO",
+            "MARZO",
+            "ABRIL",
+            "MAYO",
+            "JUNIO",
+            "JULIO",
+            "AGOSTO",
+            "SETIEMBRE",
+            "OCTUBRE",
+            "NOVIEMBRE",
+            "DICIEMBRE"});
+            this.cboMes.Location = new System.Drawing.Point(592, 48);
+            this.cboMes.Name = "cboMes";
+            this.cboMes.Size = new System.Drawing.Size(304, 28);
+            this.cboMes.TabIndex = 11;
+            this.cboMes.Text = "ENERO";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(538, 51);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "MES:";
+            // 
+            // cboSeccionR
+            // 
+            this.cboSeccionR.FormattingEnabled = true;
+            this.cboSeccionR.Location = new System.Drawing.Point(398, 48);
+            this.cboSeccionR.Name = "cboSeccionR";
+            this.cboSeccionR.Size = new System.Drawing.Size(115, 28);
+            this.cboSeccionR.TabIndex = 5;
+            // 
+            // cboGradoR
+            // 
+            this.cboGradoR.FormattingEnabled = true;
+            this.cboGradoR.Location = new System.Drawing.Point(84, 49);
+            this.cboGradoR.Name = "cboGradoR";
+            this.cboGradoR.Size = new System.Drawing.Size(201, 28);
+            this.cboGradoR.TabIndex = 4;
+            // 
+            // tbNombreDocente
+            // 
+            this.tbNombreDocente.Location = new System.Drawing.Point(212, 7);
+            this.tbNombreDocente.Name = "tbNombreDocente";
+            this.tbNombreDocente.Size = new System.Drawing.Size(922, 26);
+            this.tbNombreDocente.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(307, 56);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 20);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "SECCIÓN:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(5, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 20);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "GRADO:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(200, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "NOMBRE DEL DOCENTE:";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1318, 503);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Incidencias";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1318, 503);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Justificaciones";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -813,9 +813,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).EndInit();
             this.ResumeLayout(false);
 
         }
