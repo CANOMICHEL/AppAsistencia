@@ -22,6 +22,18 @@ namespace LibClases
             return new string[] { "CodDocente", "Contraseña", "DNI", "Nombre", "Direccion", "Telefono" };
         }
 
+        public Boolean RespuestaLogin(string pUsuario, string pContraseña)
+        {
+            string Consulta = "exec spuTDocente_Validar '"+pUsuario+"' ,'"+pContraseña+"'";
+            //Console.WriteLine(Consulta);
+
+            aConexion.EjecutarSelect(Consulta);
+            if (aConexion.Datos.Tables[0].Rows[0][0].ToString() == "0")
+                return true;
+            else
+                return false;
+        }
+
         public DataTable AulassDocente(string cod)
         {
             string consulta = "exec spuTMatricula_GradoPorDocente '" + cod + "'";

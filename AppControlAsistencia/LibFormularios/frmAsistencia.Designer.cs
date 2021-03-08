@@ -328,7 +328,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmAsistencia";
-            this.RightToLeftLayout = true;
+            this.Opacity = 0.9D;
             this.Text = "frmAsistencia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAsistencia_FormClosing);

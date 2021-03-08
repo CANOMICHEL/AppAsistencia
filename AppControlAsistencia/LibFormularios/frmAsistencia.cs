@@ -15,7 +15,6 @@ namespace LibFormularios
         cDocente aDocente = new cDocente();
         cAlumno aAlumno = new cAlumno();
         private string aCodDocente = "";
-        private frmAlerta1 alerta = new frmAlerta1();
         private string aEstado = "";
         //Este atributo tiene la funcion de verificar que el docente haya guardado la lista de asistencia
         private bool aGuardado = false;
@@ -56,11 +55,9 @@ namespace LibFormularios
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Guardar();
-            alerta.ShowDialog();
-            if(alerta.Guardar)
-                Guardar();
+            
 
-
+            
             //btnSalir.Enabled = true;
         }
 
