@@ -369,7 +369,7 @@ AS
 GO
 
 -- ==========================INSERT TAsistenciaAlumno==========================
-CREATE PROCEDURE spuTAsistenciaAlumno_Insert
+CREATE PROCEDURE spuTAsistenciaAlumno_Insertar
 	@Fecha DATE,
 	@CodAlumno INT,
 	@CodUsuario INT,

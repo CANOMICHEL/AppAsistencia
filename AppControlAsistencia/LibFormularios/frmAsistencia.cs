@@ -48,32 +48,16 @@ namespace LibFormularios
         private void Guardar()
         {
             cAsistenciaAlumno a = new cAsistenciaAlumno();
-            string[] datos = new string[5];
-            string auxiliar = "";
+            string[] datos = new string[6];
             for (int i = 0; i < dgvListadoAlumnos.RowCount - 1; i++)
             {
-                
-             
-                //auxiliar = Estado(dgvListadoAlumnos,i);
-                auxiliar = "P";
-                Console.WriteLine("ESTADO: " + auxiliar);
-                if (auxiliar != "NA")
-                {
-                    datos[0] = /*"20/02/2019";*/ DateTime.Now.ToShortDateString();// Year.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Day.ToString();
-                    datos[1] = dgvListadoAlumnos.Rows[i].Cells[1].Value.ToString();
-                    datos[2] = /*"2019";*/DateTime.Now.Year.ToString();
-                    datos[3] = auxiliar;
-                    datos[4] = dgvListadoAlumnos.Rows[i].Cells[6].Value.ToString();
-
-                    a.Insertar(datos);            
-
-                }
-                else
-                {
-                    MessageBox.Show("No se ingresó todos los estados de los alumnos");
-                    break;
-
-                }              
+                datos[0] = DateTime.Now.ToShortDateString();
+                datos[1] = dgvListadoAlumnos.Rows[i].Cells[1].Value.ToString();
+                datos[2] = aCodDocente;
+                datos[3] = "2021";
+                datos[4] = "P";//Estado(dgvListadoAlumnos, i);
+                datos[5] = dgvListadoAlumnos.Rows[i].Cells[6].Value.ToString();
+                a.insert(datos);  
             }
             MessageBox.Show("Se guardó el registro");
         }
@@ -84,10 +68,8 @@ namespace LibFormularios
                 return "P";
             else if ((dgv.Rows[fila].Cells[4] as DataGridViewCheckBoxCell).Selected == true)
                 return "T";
-            else if ((dgv.Rows[fila].Cells[5] as DataGridViewCheckBoxCell).Selected == true)
-                return "F";
             else
-                return "NA";
+                return "F";
         }
         private string Posicion(int n)
         {

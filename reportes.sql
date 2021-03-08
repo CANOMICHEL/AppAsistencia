@@ -24,14 +24,14 @@ begin
 		ISNULL([19],'')[19],ISNULL([20],'')[20],ISNULL([21],'')[21],ISNULL([22],'')[22],ISNULL([23],'')[23],ISNULL([24],'')[24],
 		ISNULL([25],'')[25],ISNULL([26],'')[26],ISNULL([27],'')[27],ISNULL([28],'')[28],ISNULL([29],'')[29],ISNULL([30],'')[30],ISNULL([31],'')[31]
 		from #T2
-		PIVOT (MAX(Estado)
+		PIVOT (MIN(Estado)
 		FOR DIA IN ([1],[2],[3],[4],[5], [6],[7], [8], [9], [10], [11], [12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[23],[24],
 		[25],[26],[27],[28],[29],[30],[31]))
 		as PVT
 end
 go
 
---exec spuReporteAsistencia '2','A','SECUNDARIA','04'
+--exec spuReporteAsistencia '2','A','SECUNDARIA','03'
 
 
 alter procedure spuTDocente_Datos

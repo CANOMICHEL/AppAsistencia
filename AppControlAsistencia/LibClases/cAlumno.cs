@@ -20,7 +20,7 @@ namespace LibClases
         //---- Implementacion de metodos abstractos
         public override string[] NombresAtributos()
         {
-            return new string[] {"DNI", "Nombre", "Direccion", "Telefono" };
+            return new string[] { "DNI", "Nombre", "Direccion", "Telefono" };
         }
 
         public DataTable ListarAlumnosGrado(string Grado, string Seccion, string Nivel)
