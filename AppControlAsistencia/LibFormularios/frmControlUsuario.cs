@@ -16,7 +16,7 @@ namespace LibFormularios
     {
         //Atributos
         cDocente aDocente = new cDocente();
-        cUsuario aUsuario = new LibClases.cUsuario();
+        cUsuario aUsuario = new cUsuario();
         public frmControlUsuario()
         {
             InitializeComponent();
@@ -64,6 +64,14 @@ namespace LibFormularios
                 {
                     frmAsistencia L = new frmAsistencia();
                     L.CodDocente = aDocente.IdDocente(txtUsername.Text);
+                    L.ShowDialog();
+                }
+                if (aUsuario.RolLogin(txtUsername.Text) == "DIRECTOR")
+                {
+                    //Abrir formulario de director
+                    frmDirector L = new frmDirector();
+                    //L.CodDirector = this.txtUsername.Text;
+                    L.CodDirector = aDocente.IdDocente(txtUsername.Text);
                     L.ShowDialog();
                 }
                 else
