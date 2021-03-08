@@ -40,8 +40,8 @@ namespace LibClases
             //Console.WriteLine(Consulta);
 
             aConexion.EjecutarSelect(Consulta);
-            string Id = aConexion.Datos.Tables[0].Rows[0][0].ToString();
-            string Rol = aConexion.Datos.Tables[0].Rows[0][1].ToString();
+            //string Id = aConexion.Datos.Tables[0].Rows[0][0].ToString();
+            string Rol = aConexion.Datos.Tables[0].Rows[0][0].ToString();
             if (Rol != "")
                 return Rol;
             else
