@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using LibClases;
 using LibFormularios;
 
@@ -17,11 +16,10 @@ namespace LibFormularios
     {
         //Atributos
         cDocente aDocente = new cDocente();
-
+        cUsuario aUsuario = new LibClases.cUsuario();
         public frmControlUsuario()
         {
             InitializeComponent();
-            
         }
 
         private void enter_event(object sender, EventArgs e)
@@ -59,46 +57,20 @@ namespace LibFormularios
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            if (aDocente.RespuestaLogin(txtUsername.Text, txtPassword.Text))
+            if (aUsuario.RespuestaLogin(txtUsername.Text, txtPassword.Text))
             {
                 //Console.WriteLine(txtUsername.Text[0].ToString() + txtUsername.Text[1]);
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DP")
+                if (aUsuario.RolLogin(txtUsername.Text) == "DOCENTE")
                 {
                     frmAsistencia L = new frmAsistencia();
-                    L.CodDocente = this.txtUsername.Text;
-                    
-                    
+                    L.CodDocente = aDocente.IdDocente(txtUsername.Text);
                     L.ShowDialog();
                 }
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DS")
+                else
                 {
-                    //Abrir formulario de docente secunadria
-                    
-                    frmAsistencia L = new frmAsistencia();
-                    L.CodDocente = this.txtUsername.Text;
-                    L.ShowDialog();
+                    MessageBox.Show("Acceso Denegado");
                 }
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DI")
-                {
-                    //Abrir formulario de director
-                    frmDirector L = new frmDirector();
-                    L.ShowDialog();
-                }
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "AU")
-                {
-                    //Abrir formulario de auxiliar
-                    frmIngresoDatos L = new frmIngresoDatos();
-                    L.ShowDialog();
-                }
-
             }
-            else
-            {
-
-                MessageBox.Show("Acceso Denegado");
-            }
-            //aqui se verificara que el usuario y contraseña sea válido
-            //ademas se debe verificar que el usuario acceda al sistema correcto
         }
 
     }

@@ -45,9 +45,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 80);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 253);
+            this.pictureBox1.Size = new System.Drawing.Size(218, 204);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,10 +55,10 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(26, 3);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 3, 5, 7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(253, 77);
+            this.pictureBox2.Size = new System.Drawing.Size(233, 67);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
@@ -76,7 +76,7 @@
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(685, 337);
+            this.panel.Size = new System.Drawing.Size(554, 299);
             this.panel.TabIndex = 1;
             // 
             // txtPassword
@@ -85,9 +85,9 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtPassword.Location = new System.Drawing.Point(284, 149);
+            this.txtPassword.Location = new System.Drawing.Point(284, 143);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(380, 22);
+            this.txtPassword.Size = new System.Drawing.Size(234, 22);
             this.txtPassword.TabIndex = 19;
             this.txtPassword.Text = "Contraseña";
             this.txtPassword.Enter += new System.EventHandler(this.enter_event);
@@ -99,9 +99,9 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtUsername.Location = new System.Drawing.Point(280, 67);
+            this.txtUsername.Location = new System.Drawing.Point(282, 67);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(380, 22);
+            this.txtUsername.Size = new System.Drawing.Size(236, 22);
             this.txtUsername.TabIndex = 17;
             this.txtUsername.Text = "Usuario";
             this.txtUsername.Enter += new System.EventHandler(this.enter_event);
@@ -114,9 +114,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(284, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 24);
+            this.label1.Size = new System.Drawing.Size(240, 24);
             this.label1.TabIndex = 18;
-            this.label1.Text = "_____________________________________";
+            this.label1.Text = "_______________________";
             // 
             // lblUser
             // 
@@ -125,18 +125,18 @@
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.Location = new System.Drawing.Point(280, 72);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(380, 24);
+            this.lblUser.Size = new System.Drawing.Size(240, 24);
             this.lblUser.TabIndex = 16;
-            this.lblUser.Text = "_____________________________________";
+            this.lblUser.Text = "_______________________";
             // 
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.CadetBlue;
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcceder.Location = new System.Drawing.Point(345, 219);
+            this.btnAcceder.Location = new System.Drawing.Point(427, 195);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(293, 38);
+            this.btnAcceder.Size = new System.Drawing.Size(97, 30);
             this.btnAcceder.TabIndex = 15;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
@@ -146,11 +146,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 337);
+            this.ClientSize = new System.Drawing.Size(554, 299);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmControlUsuario";
-            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

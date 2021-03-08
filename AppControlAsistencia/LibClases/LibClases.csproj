@@ -44,7 +44,11 @@
     <Compile Include="cConexion.cs" />
     <Compile Include="cDocente.cs" />
     <Compile Include="cEntidad.cs" />
+    <Compile Include="cUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

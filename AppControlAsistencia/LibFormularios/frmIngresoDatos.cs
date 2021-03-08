@@ -96,34 +96,34 @@ namespace LibFormularios
         private void CargarListaAlumnos()
         {
             //DataTable Docentes = aDocente.ListarDocentes();
-            dgvAlumnos.Rows.Clear();
-            DataTable tabla = aAlumnoo.ListarAlumnos();
-            foreach (DataRow linea in tabla.Rows)
-            {
-                dgvAlumnos.Rows.Add(linea[0].ToString(), linea[1].ToString(), linea[2].ToString(), linea[3].ToString(), linea[4].ToString());
-            }
+            //dgvAlumnos.Rows.Clear();
+            //DataTable tabla = aAlumnoo.ListarAlumnos();
+            //foreach (DataRow linea in tabla.Rows)
+            //{
+            //    dgvAlumnos.Rows.Add(linea[0].ToString(), linea[1].ToString(), linea[2].ToString(), linea[3].ToString(), linea[4].ToString());
+            //}
         }
 
         private void CargarListaDocentes()
         {
-            dgvDocentes.Rows.Clear();
-            DataTable tabla = aDocente.ListarDocentes();
+            //dgvDocentes.Rows.Clear();
+            //DataTable tabla = aDocente.ListarDocentes();
 
-            foreach (DataRow linea in tabla.Rows)
-            {
-                dgvDocentes.Rows.Add(linea[0].ToString(), linea[2].ToString(), linea[3].ToString(), linea[4].ToString(), linea[5].ToString());
-            }
+            //foreach (DataRow linea in tabla.Rows)
+            //{
+            //    dgvDocentes.Rows.Add(linea[0].ToString(), linea[2].ToString(), linea[3].ToString(), linea[4].ToString(), linea[5].ToString());
+            //}
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            int cod = int.Parse(aAlumnoo.ultimo().Rows[0][0].ToString().Substring(1,4))+1;
-            string Nombres = txtNombreal.Text + " " + txtAPal.Text + " " + tbAMal.Text;
+            //int cod = int.Parse(aAlumnoo.ultimo().Rows[0][0].ToString().Substring(1,4))+1;
+            //string Nombres = txtNombreal.Text + " " + txtAPal.Text + " " + tbAMal.Text;
             
-            aAlumnoo.Insertar(new string[] {"A00"+cod.ToString(),tbDNIal.Text,Nombres,tbDireccional.Text,tbTelefonoal.Text });
-            MessageBox.Show("Alumno Registrado Exitosamente");
-            CargarListaAlumnos();
-            limpiarAlumno();
+            //aAlumnoo.Insertar(new string[] {"A00"+cod.ToString(),tbDNIal.Text,Nombres,tbDireccional.Text,tbTelefonoal.Text });
+            //MessageBox.Show("Alumno Registrado Exitosamente");
+            //CargarListaAlumnos();
+            //limpiarAlumno();
         }
 
         private void limpiarAlumno()
@@ -151,17 +151,17 @@ namespace LibFormularios
 
         private void btnGrabarDocente_Click(object sender, EventArgs e)
         {
-            int cod = int.Parse(aDocente.ultimo().Rows[0][0].ToString().Substring(2, 3 )) + 1;
-            string Nombres = tbNmbresdoc.Text + " " + tbAPdoc.Text + " " + tbAMdoc.Text;
-            string tipo="";
-            if(cbTipoDoc.Text=="Docente Primaria")
-                tipo="DP";
-            if(cbTipoDoc.Text=="Docente Secundaria")
-                tipo="DS";
-            aDocente.Insertar(new string[] { tipo+ "00" + cod.ToString(),"0000", tbDNIdoc.Text, Nombres, tbDirecciondoc.Text, tbtelefonodoc.Text });
-            MessageBox.Show("Docente Registrado Exitosamente");
-            CargarListaDocentes();
-            limpiarDocente();
+            //int cod = int.Parse(aDocente.ultimo().Rows[0][0].ToString().Substring(2, 3 )) + 1;
+            //string Nombres = tbNmbresdoc.Text + " " + tbAPdoc.Text + " " + tbAMdoc.Text;
+            //string tipo="";
+            //if(cbTipoDoc.Text=="Docente Primaria")
+            //    tipo="DP";
+            //if(cbTipoDoc.Text=="Docente Secundaria")
+            //    tipo="DS";
+            //aDocente.Insertar(new string[] { tipo+ "00" + cod.ToString(),"0000", tbDNIdoc.Text, Nombres, tbDirecciondoc.Text, tbtelefonodoc.Text });
+            //MessageBox.Show("Docente Registrado Exitosamente");
+            //CargarListaDocentes();
+            //limpiarDocente();
         }
     }
 }

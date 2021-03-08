@@ -15,9 +15,9 @@ namespace LibFormularios
         cDocente aDocente = new cDocente();
         cAlumno aAlumno = new cAlumno();
         private string aCodDocente = "";
-        private string aEstado = "";
         //Este atributo tiene la funcion de verificar que el docente haya guardado la lista de asistencia
         private bool aGuardado = false;
+        private string aEstado;
 
         public frmAsistencia()
         {
@@ -29,36 +29,20 @@ namespace LibFormularios
         private void frmAsistencia_Load(object sender, EventArgs e)
         {
 
-            tbDocente.Text = aDocente.NombreDocente(aCodDocente).Rows[0][0].ToString();
+            tbDocente.Text = aDocente.NombreDocente(Int32.Parse(aCodDocente));
+            tbNombreDocente.Text = aDocente.NombreDocente(Int32.Parse(aCodDocente));
             ListarSalonesDeDocente();
         }
 
        
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            
-            if (aGuardado)
-            {
-                
-                this.Close();
-                aGuardado = false;
-                
-            }
-            else
-            {
-                MessageBox.Show("Debe Guardar el Registro");
-
-            }
-                
+            this.Close();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Guardar();
-            
-
-            
-            //btnSalir.Enabled = true;
         }
 
         private void Guardar()
@@ -118,7 +102,7 @@ namespace LibFormularios
 
         private void cboGrado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarListaAlumnos();
+            
         }
 
         #endregion eventos
@@ -129,14 +113,24 @@ namespace LibFormularios
 
         private void ListarSalonesDeDocente()
         {
-            cboGrado.DataSource = aDocente.AulassDocente(aCodDocente);
-            cboGrado.DisplayMember = "GradoSeccion";
-            cboGrado.ValueMember = "CodGrado";
+            cboGrado.DataSource = aDocente.GradoDocente(Int32.Parse(aCodDocente));
+            cboSeccion.DataSource = aDocente.SeccionDocente(Int32.Parse(aCodDocente));
+            cboGrado.DisplayMember = "Grado";
+            cboGrado.ValueMember = "Grado";
+            cboSeccion.DisplayMember = "Seccion";
+            cboSeccion.ValueMember = "Seccion";
+            cboGradoR.DataSource= aDocente.GradoDocente(Int32.Parse(aCodDocente));
+            cboSeccionR.DataSource = aDocente.SeccionDocente(Int32.Parse(aCodDocente));
+            cboGradoR.DisplayMember = "Grado";
+            cboGradoR.ValueMember = "Grado";
+            cboSeccionR.DisplayMember = "Seccion";
+            cboSeccionR.ValueMember = "Seccion";
         }
 
 
         public void CargarListaAlumnos()
         {
+            
             dgvListadoAlumnos.Rows.Clear();
             DataTable tabla = ListaAlumnos();
            
@@ -144,14 +138,29 @@ namespace LibFormularios
             int n = 0;
             foreach(DataRow linea in tabla.Rows){
                 n++;
-                dgvListadoAlumnos.Rows.Add(n.ToString(),linea[0].ToString(),linea[1].ToString(),check,check,check,"");
+                dgvListadoAlumnos.Rows.Add(n.ToString(),linea[0].ToString(),linea[1],check,check,check,"");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dgvReporte.Rows.Clear();
+            string Nivel = aDocente.Nivel(Int32.Parse(aCodDocente));
+            DataTable tabla = aDocente.ReporteAlumnos(cboGradoR.SelectedValue.ToString(), cboSeccionR.SelectedValue.ToString(), Nivel, cboMes.Text);
+            int n = 0;
+            foreach (DataRow linea in tabla.Rows)
+            {
+                n++;
+                dgvReporte.Rows.Add(n.ToString(), linea[0], linea[1], linea[2], linea[3], linea[4], linea[5]
+                    , linea[6], linea[7], linea[8], linea[9], linea[10], linea[11], linea[12], linea[13], linea[14]
+                    , linea[15], linea[16], linea[17], linea[18], linea[19], linea[20], linea[21], linea[22]
+                    , linea[23], linea[24], linea[25], linea[26], linea[27], linea[28], linea[29], linea[30], linea[31]);
             }
         }
 
         private DataTable ListaAlumnos()
         {
-            String Cod = cboGrado.SelectedValue.ToString();
-            return aAlumno.ListarAlumnosGrado(Cod);
+            return aAlumno.ListarAlumnosGrado(cboGrado.SelectedValue.ToString(), cboSeccion.SelectedValue.ToString(), aDocente.Nivel(Int32.Parse(aCodDocente)));
         }
         //propiedades
         public TextBox TBDocente
@@ -209,21 +218,9 @@ namespace LibFormularios
             
         }
 
-        private void frmAsistencia_FormClosing(object sender, FormClosingEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (aGuardado)
-            {
-
-                this.Close();
-                aGuardado = false;
-
-            }
-            else
-            {
-                MessageBox.Show("Debe Guardar el Registro");
-
-            }
+            CargarListaAlumnos();
         }
-
     }
 }

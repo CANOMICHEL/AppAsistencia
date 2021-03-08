@@ -20,26 +20,12 @@ namespace LibClases
         //---- Implementacion de metodos abstractos
         public override string[] NombresAtributos()
         {
-            return new string[] { "CodAlumno", "DNI", "Nombre", "Direccion", "Telefono" };
+            return new string[] {"DNI", "Nombre", "Direccion", "Telefono" };
         }
 
-        public DataTable ListarAlumnosGrado(string Cod)
+        public DataTable ListarAlumnosGrado(string Grado, string Seccion, string Nivel)
         {
-            string consulta = "exec spuTMatricula_AlumnosPorGrado '" + Cod + "'";
-            aConexion.EjecutarSelect(consulta);
-            return aConexion.Datos.Tables[0];
-        }
-
-        public DataTable ListarAlumnos()
-        {
-            string consulta = "exec spuTAlumno_Listar";
-            aConexion.EjecutarSelect(consulta);
-            return aConexion.Datos.Tables[0];
-        }
-
-        public DataTable ultimo()
-        {
-            string consulta = "exec spuTAlumno_Ultimo";
+            string consulta = "exec spuAlumnosListar '"+Grado + "' ,'"+ Seccion +"', '"+Nivel+"'";
             aConexion.EjecutarSelect(consulta);
             return aConexion.Datos.Tables[0];
         }

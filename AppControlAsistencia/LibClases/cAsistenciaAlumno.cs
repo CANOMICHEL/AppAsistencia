@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,9 @@ namespace LibClases
         //---- Implementacion de metodos abstractos
         public override string[] NombresAtributos()
         {
-            return new string[] { "Fecha", "CodAlumno", "AñoCurricular", "Estado" , "Observacion"};
+            return new string[] {"Id", "Fecha", "CodAlumno","CodDocente", "AñoCurricular", "Estado" , "Observacion"};
         }
+
+       
     }
 }
