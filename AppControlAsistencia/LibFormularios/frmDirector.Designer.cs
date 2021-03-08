@@ -39,20 +39,28 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarIncidenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeDocentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarIncidenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Docentes = new System.Windows.Forms.TabPage();
+            this.AlumnosAsistencia = new System.Windows.Forms.TabPage();
+            this.AlumnosIncidencia = new System.Windows.Forms.TabPage();
+            this.Reportes = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -63,14 +71,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(966, 468);
+            this.panel1.Size = new System.Drawing.Size(973, 524);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(685, 64);
+            this.pictureBox3.Location = new System.Drawing.Point(707, 119);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(183, 162);
             this.pictureBox3.TabIndex = 8;
@@ -80,7 +88,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 64);
+            this.pictureBox2.Location = new System.Drawing.Point(34, 119);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(319, 162);
             this.pictureBox2.TabIndex = 7;
@@ -90,7 +98,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(363, 64);
+            this.pictureBox1.Location = new System.Drawing.Point(385, 119);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(293, 162);
             this.pictureBox1.TabIndex = 6;
@@ -102,7 +110,7 @@
             this.btnDocentes.AutoSize = true;
             this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDocentes.Location = new System.Drawing.Point(445, 232);
+            this.btnDocentes.Location = new System.Drawing.Point(467, 287);
             this.btnDocentes.Name = "btnDocentes";
             this.btnDocentes.Size = new System.Drawing.Size(149, 32);
             this.btnDocentes.TabIndex = 3;
@@ -114,7 +122,7 @@
             this.btnRegistrarAsistencia.AutoSize = true;
             this.btnRegistrarAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarAsistencia.Location = new System.Drawing.Point(685, 232);
+            this.btnRegistrarAsistencia.Location = new System.Drawing.Point(707, 287);
             this.btnRegistrarAsistencia.Name = "btnRegistrarAsistencia";
             this.btnRegistrarAsistencia.Size = new System.Drawing.Size(183, 32);
             this.btnRegistrarAsistencia.TabIndex = 5;
@@ -126,7 +134,7 @@
             this.btnAlumnos.AutoSize = true;
             this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlumnos.Location = new System.Drawing.Point(76, 232);
+            this.btnAlumnos.Location = new System.Drawing.Point(98, 287);
             this.btnAlumnos.Name = "btnAlumnos";
             this.btnAlumnos.Size = new System.Drawing.Size(159, 32);
             this.btnAlumnos.TabIndex = 4;
@@ -141,12 +149,14 @@
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(966, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(973, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // inicioToolStripMenuItem
             // 
+            this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listarToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.inicioToolStripMenuItem.Text = "Docentes";
@@ -160,6 +170,18 @@
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
             this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.alumnosToolStripMenuItem.Text = "Alumnos";
+            // 
+            // registrarAsistenciaToolStripMenuItem
+            // 
+            this.registrarAsistenciaToolStripMenuItem.Name = "registrarAsistenciaToolStripMenuItem";
+            this.registrarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarAsistenciaToolStripMenuItem.Text = "Registrar asistencia";
+            // 
+            // registrarIncidenteToolStripMenuItem
+            // 
+            this.registrarIncidenteToolStripMenuItem.Name = "registrarIncidenteToolStripMenuItem";
+            this.registrarIncidenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarIncidenteToolStripMenuItem.Text = "Registrar incidente";
             // 
             // reportesToolStripMenuItem
             // 
@@ -182,23 +204,68 @@
             this.reportesDeDocentesToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.reportesDeDocentesToolStripMenuItem.Text = "Reportes de docentes";
             // 
-            // registrarAsistenciaToolStripMenuItem
+            // listarToolStripMenuItem
             // 
-            this.registrarAsistenciaToolStripMenuItem.Name = "registrarAsistenciaToolStripMenuItem";
-            this.registrarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarAsistenciaToolStripMenuItem.Text = "Registrar asistencia";
+            this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listarToolStripMenuItem.Text = "Listar";
+            this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
-            // registrarIncidenteToolStripMenuItem
+            // tabControl1
             // 
-            this.registrarIncidenteToolStripMenuItem.Name = "registrarIncidenteToolStripMenuItem";
-            this.registrarIncidenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarIncidenteToolStripMenuItem.Text = "Registrar incidente";
+            this.tabControl1.Controls.Add(this.Docentes);
+            this.tabControl1.Controls.Add(this.AlumnosAsistencia);
+            this.tabControl1.Controls.Add(this.AlumnosIncidencia);
+            this.tabControl1.Controls.Add(this.Reportes);
+            this.tabControl1.Location = new System.Drawing.Point(34, 350);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(409, 100);
+            this.tabControl1.TabIndex = 11;
+            // 
+            // Docentes
+            // 
+            this.Docentes.Location = new System.Drawing.Point(4, 22);
+            this.Docentes.Name = "Docentes";
+            this.Docentes.Padding = new System.Windows.Forms.Padding(3);
+            this.Docentes.Size = new System.Drawing.Size(401, 74);
+            this.Docentes.TabIndex = 0;
+            this.Docentes.Text = "Docentes";
+            this.Docentes.UseVisualStyleBackColor = true;
+            // 
+            // AlumnosAsistencia
+            // 
+            this.AlumnosAsistencia.Location = new System.Drawing.Point(4, 22);
+            this.AlumnosAsistencia.Name = "AlumnosAsistencia";
+            this.AlumnosAsistencia.Padding = new System.Windows.Forms.Padding(3);
+            this.AlumnosAsistencia.Size = new System.Drawing.Size(401, 74);
+            this.AlumnosAsistencia.TabIndex = 1;
+            this.AlumnosAsistencia.Text = "Alumnos";
+            this.AlumnosAsistencia.UseVisualStyleBackColor = true;
+            // 
+            // AlumnosIncidencia
+            // 
+            this.AlumnosIncidencia.Location = new System.Drawing.Point(4, 22);
+            this.AlumnosIncidencia.Name = "AlumnosIncidencia";
+            this.AlumnosIncidencia.Size = new System.Drawing.Size(401, 74);
+            this.AlumnosIncidencia.TabIndex = 2;
+            this.AlumnosIncidencia.Text = "tabPage3";
+            this.AlumnosIncidencia.UseVisualStyleBackColor = true;
+            // 
+            // Reportes
+            // 
+            this.Reportes.Location = new System.Drawing.Point(4, 22);
+            this.Reportes.Name = "Reportes";
+            this.Reportes.Size = new System.Drawing.Size(401, 74);
+            this.Reportes.TabIndex = 3;
+            this.Reportes.Text = "tabPage1";
+            this.Reportes.UseVisualStyleBackColor = true;
             // 
             // frmDirector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 468);
+            this.ClientSize = new System.Drawing.Size(973, 524);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmDirector";
@@ -211,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -232,5 +300,11 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesDeAlumnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesDeDocentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage Docentes;
+        private System.Windows.Forms.TabPage AlumnosAsistencia;
+        private System.Windows.Forms.TabPage AlumnosIncidencia;
+        private System.Windows.Forms.TabPage Reportes;
     }
 }

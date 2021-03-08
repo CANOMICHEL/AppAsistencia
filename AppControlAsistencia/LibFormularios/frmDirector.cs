@@ -44,5 +44,10 @@ namespace LibFormularios
         {
 
         }
+
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

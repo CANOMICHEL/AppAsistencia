@@ -16,7 +16,7 @@ namespace LibFormularios
     public partial class frmControlUsuario : Form
     {
         //Atributos
-        cDocente aDocente = new cDocente();
+        cUsuario aUsuario = new cUsuario();
 
         public frmControlUsuario()
         {
@@ -59,10 +59,10 @@ namespace LibFormularios
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            if (aDocente.RespuestaLogin(txtUsername.Text, txtPassword.Text))
+            if (aUsuario.RespuestaLogin(txtUsername.Text, txtPassword.Text))
             {
                 //Console.WriteLine(txtUsername.Text[0].ToString() + txtUsername.Text[1]);
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DP")
+                if (aUsuario.RolLogin(txtUsername.Text) == "DOCENTE")
                 {
                     frmAsistencia L = new frmAsistencia();
                     L.CodDocente = this.txtUsername.Text;
@@ -70,26 +70,26 @@ namespace LibFormularios
                     
                     L.ShowDialog();
                 }
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DS")
+                /*if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DS")
                 {
                     //Abrir formulario de docente secunadria
                     
                     frmAsistencia L = new frmAsistencia();
                     L.CodDocente = this.txtUsername.Text;
                     L.ShowDialog();
-                }
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DI")
+                }*/
+               /* if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "DI")
                 {
                     //Abrir formulario de director
                     frmDirector L = new frmDirector();
                     L.ShowDialog();
-                }
-                if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "AU")
+                }*/
+               /* if (txtUsername.Text[0].ToString() + txtUsername.Text[1] == "AU")
                 {
                     //Abrir formulario de auxiliar
                     frmIngresoDatos L = new frmIngresoDatos();
                     L.ShowDialog();
-                }
+                }*/
 
             }
             else
